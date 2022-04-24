@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="principal.css"> 
+    <link rel="stylesheet" href="grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Encriptador de texto con Javascript. Alura</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <a href="https://www.aluracursos.com/" target="_blank"><img src="Logo.png" alt="Logo de alura"></a>
+        </header>
+
+        <main class="principal">
+
+            <section class="seccion-principal">
+                <textarea class="area" id="area" placeholder="Ingrese texto aqui"></textarea>
+                <div class="contenedor-botones">
+                    <label class="icono"><ion-icon name="alert-circle" class="icono-alert" ></ion-icon>Solamente letras minúsculas y sin acentos</label>
+                    <input type="button" class="btn-encriptar" value="Encriptar" onclick="encriptarTexto()" >
+                    <input type="button" class="btn-limpiar" value="Limpiar" onclick="limpiarArea()">
+                    <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptarTexto()">
+                </div>
+            </section>
+
+            <aside class="aside">
+                <div class="munieco-contenedor">
+                    <div class="munieco-adelante">  
+                        <div class="imagen-aside">
+                            <img src="Muñeco.png" alt="">
+                        </div>                       
+                        <div class="texto-aside">
+                            <h3>
+                                Ningún mensaje fue encontrado
+                            </h3>
+                            <p>
+                                Ingrese el texto que deseas encriptar o desencriptar
+                            </p>
+                        </div>                        
+                        <div class="boton-aside">                           
+                        </div>                      
+                    </div>
+                    <div class="munieco-atras">                      
+                        <div class="texto-atras">
+                            <h3 id="tituloAsideAtras"></h3>
+                            <p class="p-atras"></p>
+                        </div>                      
+                        <div class="boton-aside">
+                            <input type="button" class="btn-copiar" value="Copiar" onclick="copiarTexto()">
+                        </div>                      
+                    </div>
+                </div>                
+            </aside>   
+
+        </main>
+        
+        <footer>
+            <div class="contenedor-footer">
+                <a href="https://app.aluracursos.com/user/cinclancr" target="_blank"><p>Creado por <span>Christopher Inclan</span></p></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="funciones.js"></script>   
+
+</body>
+</html>
+
+
